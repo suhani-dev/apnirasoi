@@ -35,11 +35,13 @@
         .menu table {
             width: 100%;
             border-collapse: collapse;
+            table-layout: fixed; /* Ensures the table fits within the screen */
         }
         .menu th, .menu td {
             border: 1px solid #ddd;
             padding: 8px;
             text-align: center;
+            word-wrap: break-word; /* Allows text to wrap within cells */
         }
         .menu th {
             background-color: #2ecc71;
@@ -67,6 +69,17 @@
             color: #f8c471;
             text-decoration: none;
         }
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .menu table {
+                width: 100%;
+                overflow-x: auto;
+            }
+            .menu th, .menu td {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -91,7 +104,7 @@
             </tr>
             <tr>
                 <td>Monday</td>
-                <td>Arhar Dal,Bhindi,Roti,Rice</td>
+                <td>Arhar Dal, Bhindi, Roti, Rice</td>
                 <td>Aloo Paratha, Curd, Pickle</td>
             </tr>
             <tr>
@@ -139,7 +152,7 @@
             <li>Facebook: <a href="https://www.facebook.com/profile.php?id=100078533134095&mibextid=ZbWKwL">facebook.com/ApniRasoi</a></li>
             <li>Instagram: <a href="https://www.instagram.com/anshikasaxena927?igsh=MTIzYjlicWd6NnU2Mw==">instagram.com/ApniRasoi</a></li>
         </ul>
-        <p><strong>PLEASE NOTE:</strong> WE DO NOT PROVIDE "DINNER" ON "SUNDAY" </p>
+        <p><strong>PLEASE NOTE:</strong> WE DO NOT PROVIDE "DINNER" ON "SUNDAY"</p>
     </section>
 
     <footer>
@@ -148,4 +161,3 @@
 
 </body>
 </html>
-"""
