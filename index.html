@@ -44,7 +44,7 @@
             font-weight: bold;
         }
         section {
-            padding: 20px;
+            padding: 10px;
             margin: 20px;
             border-radius: 10px;
             background-color: #ffffff;
@@ -214,13 +214,71 @@
     <section class="homepage">
         <h2>Today's Special Offers</h2>
         <p>Enjoy our Healthy, Hygienic, and Delicious Home-Cooked meals delivered to your doorstep.</p>
-        <p><strong>Offer of the Day:</strong> Flat 10% off on orders above ₹500!</p>
+	<p>**Our tiffin service is available exclusively in Rajajipuram and nearby areas within a 2 km radius.**</p>
+        <p><strong>Offer of the Day:</strong> Flat 10% off on monthly subscription!</p>
     </section>
  <section class="todays-menu">
         <h2>Today's Menu</h2>
         <p id="todaysLunch">Lunch: </p>
         <p id="todaysDinner">Dinner: </p>
+ <p><strong>Pre-booking required.</strong>For Lunch, order before 9 AM. For Dinner, order before 5 PM.</p>
     </section>
+<!-- Additional Information Blocks -->
+<section class="info-blocks">
+    <div class="info-block">
+        <h3>Tiffin Cost</h3>
+        <p>₹80 per meal</p>
+    </div>
+    <div class="info-block">
+        <h3>Discount Offers</h3>
+        <p>5% off on 30 meals<br>10% off on 60 meals<br><strong>Payment Mode:</strong> Advance<br>(t&c apply)</p>
+    </div>
+    <div class="info-block">
+        <h3>Special Meals</h3>
+        <p><strong>Sunday Special and Festive Special meals may occasionally be priced higher than the standard ₹80 meals</strong></p>
+    </div>
+</section>
+
+<style>
+    .info-blocks {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+    .info-block {
+        background-color: #FFEBEE; /* Light Cream */
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 30%;
+    }
+
+    .info-block h3 {
+        color: #D32F2F; /* Deep Red */
+        margin-bottom: 10px;
+    }
+
+    .info-block p {
+        font-size: 16px;
+        color: #333;
+    }
+
+    /* Responsive Design for Info Blocks */
+    @media (max-width: 600px) {
+        .info-blocks {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .info-block {
+            width: 80%;
+            margin-bottom: 15px;
+        }
+    }
+</style>
+
 
     <section class="menu">
         <h2>This Week's Meal Planner</h2>
@@ -228,41 +286,57 @@
             <tr>
                 <th>Day</th>
                 <th>Lunch</th>
+                <th>Price</th>
                 <th>Dinner</th>
+                <th>Price</th>
             </tr>
             <tr>
                 <td>Monday</td>
-                <td>Lauki sabzi,arbi(Dry),kuttu puri,meetha dahi</td>
+                <td>Lauki sabzi, Arbi (Dry), Kuttu puri, Meetha dahi</td>
+                <td>80</td>
                 <td>No service on account of Janmashtami***</td>
+                <td>80</td>
             </tr>
             <tr>
                 <td>Tuesday</td>
-                <td>Chana Dal,seasonal veg(Dry),roti,rice</td>
-                <td>Aloo Mangodi,roti,rice,raita</td>
+                <td>Chana Dal, Seasonal veg (Dry), Roti, Rice</td>
+                <td>80</td>
+                <td>Aloo Mangodi, Roti, Rice, Raita</td>
+                <td>80</td>
             </tr>
             <tr>
                 <td>Wednesday</td>
-                <td>Lal Masoor Dal,seasonal veg(Dry),roti,rice</td>
-                <td>Soyabean aloo(Gravy),seasonal veg(Dry),roti/paratha(Any 1),rice</td>
+                <td>Lal Masoor Dal, Seasonal veg (Dry), Roti, Rice</td>
+                <td>80</td>
+                <td>Soyabean aloo (Gravy), Seasonal veg (Dry), Roti/Paratha (Any 1), Rice</td>
+                <td>80</td>
             </tr>
             <tr>
                 <td>Thursday</td>
-                <td>Kadhi,masala aloo,roti,rice</td>
-                <td>Dal/Kadhi(Any 1),aloo tamatar,roti,rice</td>
+                <td>Kadhi, Masala aloo, Roti, Rice</td>
+                <td>80</td>
+                <td>Dal/Kadhi (Any 1), Aloo tamatar, Roti, Rice</td>
+                <td>80</td>
             </tr>
             <tr>
                 <td>Friday</td>
-                <td>Dal Makhani,seasonal veg(Dry),roti,rice</td>
-                <td>Dahi Aloo,kaddu (Dry),roti/paratha(Any 1),rice</td>
+                <td>Dal Makhani, Seasonal veg (Dry), Roti, Rice</td>
+                <td>80</td>
+                <td>Dahi Aloo, Kaddu (Dry), Roti/Paratha (Any 1), Rice</td>
+                <td>80</td>
             </tr>
             <tr>
                 <td>Saturday</td>
-                <td>Rajma, pyaaz aloo,roti,rice</td>
-                <td>Mix Dal,seasonal veg(Dry),roti,rice </td>
+                <td>Rajma, Pyaaz Aloo, Roti, Rice</td>
+                <td>80</td>
+                <td>Mix Dal, Seasonal veg (Dry), Roti, Rice</td>
+                <td>80</td>
             </tr>
             <tr>
                 <td>Sunday</td>
                 <td>Kabab Paratha</td>
+                <td>80</td>
+                <td>***</td>
                 <td>***</td>
             </tr>
         </table>
@@ -270,7 +344,11 @@
 
     <section class="about">
         <h2>ABOUT US</h2>
-        <p>At APNI RASOI, we bring the authentic flavors of North Indian cuisine right to your doorstep. Our tiffin box delivery service is crafted with love and care, ensuring that each meal you receive is not only delicious but also hygienic and nutritious. We take pride in offering the richness of homemade taste, making sure that every bite takes you back to the warmth of home-cooked food.</p>
+        <p>At Apni Rasoi, our journey began with a deep passion for cooking and the sheer joy of serving food that brings smiles to faces. The warmth and happiness my family felt after enjoying a meal prepared by me inspired me to turn this passion into a career. Recognizing that many people, far from home due to work or studies, yearn for the taste of home-cooked meals—something that high-rated restaurants often fail to deliver—I decided to start this business right from my own kitchen.
+
+Today, Apni Rasoi stands as the highest-rated tiffin service in the Rajajipuram area. We are committed to using only the finest quality products, ensuring that the food we serve is both healthier and tastier. Our ingredients are carefully selected to uphold the highest standards of quality, and we go the extra mile to ensure every meal is prepared with the freshest produce, reflecting the true essence of home-cooked goodness.
+
+<br>At Apni Rasoi, we don’t just deliver food; we deliver the essence of home in every bite.</p>
         <p><strong>Order Timings:</strong> Pre-booking required. For Lunch, order before 9 AM. For Dinner, order before 5 PM.</p>
         <p><strong>Delivery Timings:</strong> Lunch - 12 PM onwards | Dinner - 8 PM onwards</p>
         <p><strong>Contact Us:</strong></p>
