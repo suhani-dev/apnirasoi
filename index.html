@@ -277,6 +277,65 @@
             margin-bottom: 15px;
         }
     }
+.faq {
+    background-color: #FFEBEE; /* Light Cream */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.faq h2 {
+    color: #D32F2F; /* Deep Red */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    background-color: #FFCA28; /* Mustard Yellow */
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #FFFFFF; /* White */
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.faq-toggle {
+    background: none;
+    border: none;
+    color: #D32F2F; /* Deep Red */
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.faq-toggle:focus {
+    outline: none;
+}
+
+/* Responsive Design for FAQ */
+@media (max-width: 600px) {
+    .faq-question {
+        font-size: 14px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+    }
+}
+
 </style>
 
 
@@ -286,51 +345,69 @@
             <tr>
                 <th>Day</th>
                 <th>Lunch</th>
+                <th>Price</th>
                 <th>Dinner</th>
+                <th>Price</th>
             </tr>
             <tr>
                 <td>Monday</td>
                 <td>Lauki sabzi, Arbi (Dry), Kuttu puri, Meetha dahi</td>
+                <td>80</td>
                 <td>No service on account of Janmashtami***</td>
+                <td>80</td>
             </tr>
             <tr>
                 <td>Tuesday</td>
-                <td>Chana Dal, Seasonal veg (Dry), Roti, Rice</td>                
-                <td>Aloo Mangodi, Roti, Rice, Raita</td>                
+                <td>Chana Dal, Seasonal veg (Dry), Roti, Rice</td>
+                <td>80</td>
+                <td>Aloo Mangodi, Roti, Rice, Raita</td>
+                <td>80</td>
             </tr>
             <tr>
                 <td>Wednesday</td>
-                <td>Lal Masoor Dal, Seasonal veg (Dry), Roti, Rice</td>                
-                <td>Soyabean aloo (Gravy), Seasonal veg (Dry), Roti/Paratha (Any 1), Rice</td>               
+                <td>Lal Masoor Dal, Seasonal veg (Dry), Roti, Rice</td>
+                <td>80</td>
+                <td>Soyabean aloo (Gravy), Seasonal veg (Dry), Roti/Paratha (Any 1), Rice</td>
+                <td>80</td>
             </tr>
             <tr>
                 <td>Thursday</td>
-                <td>Kadhi, Masala aloo, Roti, Rice</td>                
-                <td>Dal/Kadhi (Any 1), Aloo tamatar, Roti, Rice</td>               
+                <td>Kadhi, Masala aloo, Roti, Rice</td>
+                <td>80</td>
+                <td>Dal/Kadhi (Any 1), Aloo tamatar, Roti, Rice</td>
+                <td>80</td>
             </tr>
             <tr>
                 <td>Friday</td>
-                <td>Dal Makhani, Seasonal veg (Dry), Roti, Rice</td>               
-                <td>Dahi Aloo, Kaddu (Dry), Roti/Paratha (Any 1), Rice</td>                
+                <td>Dal Makhani, Seasonal veg (Dry), Roti, Rice</td>
+                <td>80</td>
+                <td>Dahi Aloo, Kaddu (Dry), Roti/Paratha (Any 1), Rice</td>
+                <td>80</td>
             </tr>
             <tr>
                 <td>Saturday</td>
-                <td>Rajma, Pyaaz Aloo, Roti, Rice</td>               
-                <td>Mix Dal, Seasonal veg (Dry), Roti, Rice</td>                
+                <td>Rajma, Pyaaz Aloo, Roti, Rice</td>
+                <td>80</td>
+                <td>Mix Dal, Seasonal veg (Dry), Roti, Rice</td>
+                <td>80</td>
             </tr>
             <tr>
                 <td>Sunday</td>
-                <td>Kabab Paratha</td>                
-                <td>***</td>                
+                <td>Kabab Paratha</td>
+                <td>80</td>
+                <td>***</td>
+                <td>***</td>
             </tr>
         </table>
     </section>
 
     <section class="about">
         <h2>ABOUT US</h2>
-        <p>At Apni Rasoi, our journey began with a profound passion for cooking and the joy of serving meals that bring smiles.The warmth and happiness my family felt after enjoying a meal prepared by me inspired me to turn this passion into a career.<br><br> Understanding that people away from home crave the taste of home-cooked meals-something that high-rated restaurants often fail to deliver.I started this business from my own kitchen.
+        <p>At Apni Rasoi, our journey began with a deep passion for cooking and the sheer joy of serving food that brings smiles to faces. The warmth and happiness my family felt after enjoying a meal prepared by me inspired me to turn this passion into a career. Recognizing that many people, far from home due to work or studies, yearn for the taste of home-cooked meals—something that high-rated restaurants often fail to deliver—I decided to start this business right from my own kitchen.
 
-<br><br> Today, Apni Rasoi proudly stands as the highest-rated tiffin service in Rajajipuram. We are dedicated to utilizing the highest quality ingredients, ensuring that every meal is both nutritious and flavorful. Our unwavering commitment to quality and freshness embodies the true essence of home-cooked excellence.<br><br>At Apni Rasoi, we don’t just deliver food; we deliver the essence of home in every bite.</p>
+Today, Apni Rasoi stands as the highest-rated tiffin service in the Rajajipuram area. We are committed to using only the finest quality products, ensuring that the food we serve is both healthier and tastier. Our ingredients are carefully selected to uphold the highest standards of quality, and we go the extra mile to ensure every meal is prepared with the freshest produce, reflecting the true essence of home-cooked goodness.
+
+<br>At Apni Rasoi, we don’t just deliver food; we deliver the essence of home in every bite.</p>
         <p><strong>Order Timings:</strong> Pre-booking required. For Lunch, order before 9 AM. For Dinner, order before 5 PM.</p>
         <p><strong>Delivery Timings:</strong> Lunch - 12 PM onwards | Dinner - 8 PM onwards</p>
         <p><strong>Contact Us:</strong></p>
@@ -342,6 +419,73 @@
         </ul>
         <p><strong>PLEASE NOTE:</strong> WE DO NOT PROVIDE "DINNER" ON "SUNDAY"</p>
     </section>
+<section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>Are there any NON-VEG options?</span>
+            <button class="faq-toggle">▼</button>
+        </div>
+        <div class="faq-answer">
+            <p>NO,Apni Rasoi offers exclusively vegetarian meals.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>Are your meals suitable for elderly people?</span>
+            <button class="faq-toggle">▼</button>
+        </div>
+        <div class="faq-answer">
+            <p>Yes, we take special care to ensure our meals are nutritious and cater to various dietary needs, including those of elderly individuals. We focus on fresh, wholesome ingredients to meet their specific requirements.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>Will i recieve a tiffin box?</span>
+            <button class="faq-toggle">▼</button>
+        </div>
+        <div class="faq-answer">
+            <p>No, For new customers or those not on a subscription, we provide disposable plates along with your packaged food.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>Can I order from you if I am not a regular customer?</span>
+            <button class="faq-toggle">▼</button>
+        </div>
+        <div class="faq-answer">
+            <p>Yes but we provide tiffins exclusively to our regular customers. For new customers, we offer disposable plates along with your packaged food.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>What areas do you deliver to?</span>
+            <button class="faq-toggle">▼</button>
+        </div>
+        <div class="faq-answer">
+            <p>We deliver exclusively in Rajajipuram and nearby areas within a 2 km radius.</p>
+        </div>
+    </div>
+<div class="faq-item">
+        <div class="faq-question">
+            <span>What is the spice level of your meals?</span>
+            <button class="faq-toggle">▼</button>
+        </div>
+        <div class="faq-answer">
+            <p>Our meals are prepared with a moderate spice level, but we can adjust it to your preference upon request.</p>
+        </div>
+</div>
+<div class="faq-item">
+        <div class="faq-question">
+            <span>How do I cancel or modify my order?</span>
+            <button class="faq-toggle">▼</button>
+        </div>
+        <div class="faq-answer">
+            <p>To cancel or modify an order, please contact us via WhatsApp as soon as possible. We can accommodate changes based on availability and timing.</p>
+        </div>
+    <!-- Add more FAQ items as needed -->
+</section>
+
 
     <footer>
         &copy; 2024 APNI RASOI - All Rights Reserved
@@ -408,6 +552,23 @@
         document.getElementById("todaysLunch").innerHTML = `Lunch: ${menu[currentDay].Lunch}`;
         document.getElementById("todaysDinner").innerHTML = `Dinner: ${menu[currentDay].Dinner}`;
     </script>
+<script>
+    document.querySelectorAll('.faq-item').forEach(item => {
+        item.querySelector('.faq-question').addEventListener('click', () => {
+            const answer = item.querySelector('.faq-answer');
+            const toggle = item.querySelector('.faq-toggle');
+            
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+                toggle.textContent = '▼';
+            } else {
+                answer.style.display = 'block';
+                toggle.textContent = '▲';
+            }
+        });
+    });
+</script>
+
 </body>
 
 </html>
